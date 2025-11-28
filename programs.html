@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Essential Meta Tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.trayashealthcare.com/programs.html" />
+  
+  <!-- Page Title -->
+  <title>Products - Trayas Healthcare | Complete Range of Quality Pharmaceutical Medicines Online</title>
+
+  
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Products - Trayas Healthcare | Quality Pharmaceutical Medicines" />
+  <meta name="twitter:description" content="Complete range of pharmaceutical products available online. Quality medicines with home delivery across India." />
+  <meta name="twitter:image" content="https://www.trayashealthcare.com/Logo/logoHD.png" />
+  
+  <!-- Schema.org Structured Data -->
+ 
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WXS4Q2KS');</script>
+  <!-- End Google Tag Manager -->
+  
+  <!-- Favicon Icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="Logo/logo.png">
+  <!-- Google Fonts Css-->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Epilogue:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+  <!-- Bootstrap Css -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <!-- SlickNav Css -->
+  <link href="css/slicknav.min.css" rel="stylesheet">
+  <!-- Swiper Css -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <!-- Font Awesome Icon Css-->
+  <link href="css/all.min.css" rel="stylesheet" media="screen">
+  <!-- Animated Css -->
+  <link href="css/animate.css" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- Mouse Cursor Css File -->
+  <link rel="stylesheet" href="css/mousecursor.css">
+  <!-- Main Custom Css -->
+  <link href="css/custom.css" rel="stylesheet" media="screen">
+  
+  <!-- Additional CSS for performance -->
+  <style>
+    /* Search input improvements */
+    .search-wrapper {
+        position: relative;
+    }
+    
+    .search-wrapper input:focus {
+        border-color: #4285f4;
+        box-shadow: 0 0 0 0.2rem rgba(66, 133, 244, 0.25);
+        outline: none;
+    }
+    
+    /* Filter button improvements */
+    #productFilters .btn {
+        transition: all 0.2s ease;
+        font-weight: 500;
+    }
+    
+    #productFilters .btn:hover {
+        transform: translateY(-1px);
+    }
+    
+    /* Product grid performance optimizations */
+    .product-grid {
+        /* Enable hardware acceleration */
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+    }
+    
+    .product-card {
+        /* Improve rendering performance */
+        contain: layout style paint;
+        isolation: isolate;
+    }
+    
+    /* No results message styling */
+    #no-results-msg {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        margin: 20px 0;
+    }
+    
+    /* Loading state */
+    .search-loading {
+        position: relative;
+    }
+    
+    .search-loading::after {
+        content: '';
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 16px;
+        border: 2px solid #f3f3f3;
+        border-top: 2px solid #4285f4;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+        0% { transform: translateY(-50%) rotate(0deg); }
+        100% { transform: translateY(-50%) rotate(360deg); }
+    }
+    
+    /* Mobile responsiveness for filters */
+    @media (max-width: 767px) {
+        #productFilters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        #productFilters .btn {
+            margin: 2px;
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+    }
+  </style>
+  <style>
+    .header-slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    
+    .slider-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    
+    .slider-image.active {
+      opacity: 1;
+    }
+    
+    .slider-nav {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      z-index: 20;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      transform: translateY(-50%);
+    }
+    
+    .slider-prev, .slider-next {
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 15px 20px;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+    
+    .slider-prev:hover, .slider-next:hover {
+      background: rgba(0, 0, 0, 0.8);
+      transform: scale(1.1);
+    }
+    
+    .slider-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 20;
+      display: flex;
+      gap: 10px;
+    }
+    
+    .slider-dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .slider-dot.active, .slider-dot:hover {
+      background: white;
+      transform: scale(1.2);
+    }
+    
+    .page-header-box {
+      position: relative;
+      z-index: 15;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      border-radius: 10px;
+      backdrop-filter: blur(5px);
+    }
+    
+    .page-header-box h1 {
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    
+    .breadcrumb-item a {
+      color: rgba(255, 255, 255, 0.9);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    }
+    
+    /* Enhanced Navigation Menu Card Styles */
+    .main-menu .navbar-nav {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 10px 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      margin-left: 20px;
+    }
+    
+    .main-menu .nav-item {
+      margin: 0 5px;
+    }
+    
+    .main-menu .nav-link {
+      position: relative;
+      padding: 12px 20px !important;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      color: #333 !important;
+      background: transparent;
+      overflow: hidden;
+    }
+    
+    .main-menu .nav-link::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      transition: all 0.4s ease;
+      z-index: -1;
+      border-radius: 10px;
+    }
+    
+    .main-menu .nav-link:hover::before {
+      left: 0;
+    }
+    
+    .main-menu .nav-link:hover {
+      color: white !important;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    }
+    
+    .main-menu .nav-item:nth-child(1) .nav-link:hover::before {
+      background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
+    }
+    
+    .main-menu .nav-item:nth-child(2) .nav-link:hover::before {
+      background: linear-gradient(135deg, #4ecdc4 0%, #44d3c8 100%);
+    }
+    
+    .main-menu .nav-item:nth-child(3) .nav-link:hover::before {
+      background: linear-gradient(135deg, #45b7d1 0%, #5ac8ed 100%);
+    }
+    
+    .main-menu .nav-item:nth-child(4) .nav-link:hover::before {
+      background: linear-gradient(135deg, #f9ca24 0%, #f9c74f 100%);
+    }
+    
+    .main-menu .nav-item:nth-child(5) .nav-link:hover::before {
+      background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+    }
+    
+    .main-menu .nav-item:nth-child(6) .nav-link:hover::before {
+      background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+    }
+    
+    /* Active menu item styling for Products page */
+    .main-menu .nav-item .nav-link[href="programs.html"] {
+      background: linear-gradient(135deg, #45b7d1 0%, #5ac8ed 100%);
+      color: white !important;
+      box-shadow: 0 5px 15px rgba(69, 183, 209, 0.4);
+    }
+    
+    /* Logo Card Styles */
+    .navbar-brand {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 10px 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .navbar-brand:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+      background: rgba(255, 255, 255, 1);
+    }
+    
+    .navbar-brand img {
+      transition: all 0.3s ease;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    }
+    
+    .navbar-brand:hover img {
+      transform: scale(1.05);
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    }
+    
+    /* Mobile responsive adjustments */
+    @media (max-width: 991px) {
+      .main-menu .navbar-nav {
+        background: rgba(255, 255, 255, 0.98);
+        margin: 10px 0;
+        padding: 20px;
+      }
+      
+      .main-menu .nav-item {
+        margin: 5px 0;
+      }
+      
+      .navbar-brand {
+        padding: 8px 12px;
+        border-radius: 12px;
+      }
+    }
+    
+    /* Featured Product Styles */
+    .featured-product {
+      position: relative;
+      animation: pulse-glow 2s ease-in-out infinite alternate;
+    }
+    
+    @keyframes pulse-glow {
+      0% {
+        box-shadow: 0 15px 35px rgba(255, 71, 87, 0.3) !important;
+      }
+      100% {
+        box-shadow: 0 20px 45px rgba(255, 71, 87, 0.5) !important;
+      }
+    }
+    
+    .featured-product:hover {
+      transform: scale(1.05) !important;
+      transition: all 0.3s ease !important;
+    }
+    
+    .featured-product .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3) !important;
+    }
+    
+    /* Sparkling Animations */
+    @keyframes sparkle-glow {
+      0% {
+        box-shadow: 0 20px 50px rgba(255, 107, 107, 0.4);
+        transform: scale(1);
+      }
+      50% {
+        box-shadow: 0 25px 60px rgba(255, 107, 107, 0.6);
+        transform: scale(1.02);
+      }
+      100% {
+        box-shadow: 0 20px 50px rgba(255, 107, 107, 0.4);
+        transform: scale(1);
+      }
+    }
+    
+    @keyframes twinkle {
+      0%, 100% { 
+        opacity: 0.3; 
+        transform: scale(1) rotate(0deg); 
+      }
+      50% { 
+        opacity: 1; 
+        transform: scale(1.2) rotate(180deg); 
+      }
+    }
+    
+    @keyframes pulse-badge {
+      0%, 100% { 
+        transform: scale(1); 
+        box-shadow: 0 5px 15px rgba(255, 71, 87, 0.4);
+      }
+      50% { 
+        transform: scale(1.05); 
+        box-shadow: 0 8px 25px rgba(255, 71, 87, 0.6);
+      }
+    }
+    
+    @keyframes text-shine {
+      0%, 100% { 
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.4); 
+      }
+      50% { 
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.4), 0 0 20px rgba(255,255,255,0.5); 
+      }
+    }
+    
+    @keyframes button-glow {
+      0%, 100% { 
+        box-shadow: 0 8px 25px rgba(0,0,0,0.3); 
+      }
+      50% { 
+        box-shadow: 0 8px 25px rgba(0,0,0,0.3), 0 0 30px rgba(255,71,87,0.4); 
+      }
+    }
+  </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXS4Q2KS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Preloader Start -->
+  <div class="preloader">
+    <div class="loading-container">
+      <div class="loading"></div>
+      <div id="loading-icon"><img src="Logo/logo.png" alt=""></div>
+    </div>
+  </div>
+  <!-- Preloader End -->
+
+    <!-- Header Start -->
+  <header class="main-header bg-section">
+    <div class="header-sticky">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- Logo Start -->
+          <a class="navbar-brand" href="index.html">
+            <img src="Logo/logo.png" style="width:50px;height:50px;" alt="Trayas Healthcare Logo - Pharmaceutical Company Products" loading="eager">
+          </a>
+          <!-- Logo End -->
+
+          <!-- Main Menu Start -->
+          <div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a>
+                                    
+                                </li>                                
+                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a>
+                                <li class="nav-item"><a class="nav-link" href="programs.html">Products</a></li>
+                                <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                                <!-- <li class="nav-item highlighted-menu"><a class="nav-link" href="book-appointment.html">Book Appointment</a></li> -->
+                            </ul>
+                        </div>
+                        
+                        <!-- Header Btn Start -->
+                        <!-- <div class="header-btn">
+                            <a href="book-appointment.html" class="btn-default btn-highlighted">Book Appointment</a>
+                        </div> -->
+                        <!-- Header Btn End -->
+                    </div>
+          <!-- Main Menu End -->
+          <div class="navbar-toggle"></div>
+        </div>
+      </nav>
+      <div class="responsive-menu"></div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+    <!-- Page Header Start -->
+    <div class="page-header bg-section" style="height: 400px; width: 100%; position: relative; overflow: hidden;">
+        <!-- Image Slider Start -->
+        <div class="header-slider">
+            <div class="slider-image active" style="background-image: url('images/bg5.jpg');"></div>
+        </div>
+        
+        <!-- Slider Navigation -->
+       
+        
+        <!-- Slider Dots -->
+       
+        
+        <!-- Header Content Overlay -->
+      
+    </div>
+    <!-- Page Header End -->
+      <div class="our-programs">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h2 class="gradient-text" data-cursor="-opaque">Product List</h2>
+                    </div>
+                    <!-- Section Title End -->
+                    
+                    <!-- ONLINE AVAILABILITY ANNOUNCEMENT -->
+                    
+                    <!-- ONLINE AVAILABILITY ANNOUNCEMENT END -->
+                </div>
+            </div>
+            <!-- Page Programs Start -->
+            <div class="page-programs">
+                <div class="container">
+                    <!-- Product Search & Filter Start -->
+                    <div class="row mb-4">
+                        <div class="col-lg-6 mb-2">
+                            <div class="search-wrapper" style="position: relative;">
+                                <input type="text" id="productSearch" class="form-control" placeholder="Search products by name..." style="padding-left: 45px; border-radius: 25px; border: 2px solid #e3e6f0; font-size: 16px;">
+                                <i class="fa-solid fa-search" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #6c757d;"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <div id="productFilters" class="btn-group" role="group" style="flex-wrap: wrap;">
+                                <button type="button" class="btn btn-primary active" data-filter="all" style="border-radius: 20px; margin: 2px;">All Products</button>
+                                <button type="button" class="btn btn-outline-primary" data-filter="tablet" style="border-radius: 20px; margin: 2px;">Tablets</button>
+                                <button type="button" class="btn btn-outline-primary" data-filter="capsule" style="border-radius: 20px; margin: 2px;">Capsules</button>
+                                <button type="button" class="btn btn-outline-primary" data-filter="injection" style="border-radius: 20px; margin: 2px;">Injections</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Search & Filter End -->
+
+                    <!-- Product Gallery with correct grid and filter/search functionality -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="section-title text-center">
+        <h3 class="wow fadeInUp">Our Products</h3>
+        <h2 class="gradient-text" data-cursor="-opaque">Tailored Products for your wellness</h2>
+        <h3 class="wow fadeInUp">Explore our comprehensive range of pharmaceutical products designed to enhance health and well-being.</h3>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div id="productGrid" class="product-gallery" style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+      <!-- Product Cards (add data-type for filter) -->
+      <div class="product-card tablet" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/ACIBID-PLUS.png" alt="ACIBID-PLUS" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">ACIBID-PLUS</h4>
+      </div>
+      <div class="product-card capsule" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/CAROGEN.png" alt="CAROGEN" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">CAROGEN</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/CEECOX-AQS.png" alt="CEECOX-AQS" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">CEECOX-AQS</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/CEFELET-O.png" alt="CEFELET-O" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">CEFELET-O</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/CLINDA.png" alt="CLINDA" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">CLINDA</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/HEPADEC.png" alt="HEPADEC" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">HEPADEC</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/LIVTRY.png" alt="LIVTRY" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">LIVTRY</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/LYCOBID SYRUP.png" alt="LYCOBID SYRUP" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">LYCOBID SYRUP</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/LYCOBID-P-POWDER.png" alt="LYCOBID-P-POWDER" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">LYCOBID-P-POWDER</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/LYCOBID.png" alt="LYCOBID" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">LYCOBID</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/ND 25:50.png" alt="ND 25:50" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">ND 25:50</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/PANJO-40.png" alt="PANJO-40" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">PANJO-40</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/PT-MAL.png" alt="PT-MAL" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">PT-MAL</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/REBANK-DSR.png" alt="REBANK-DSR" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">REBANK-DSR</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/SAFTO.png" alt="SAFTO" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">SAFTO</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/TAFRON-M-SYRUP.png" alt="TAFRON-M-SYRUP" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">TAFRON-M-SYRUP</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/TAFRON.png" alt="TAFRON" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">TAFRON</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/TOLSONE.png" alt="TOLSONE" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">TOLSONE</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/TRANSCORT.png" alt="TRANSCORT" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">TRANSCORT</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/TRAYOCAL.png" alt="TRAYOCAL" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">TRAYOCAL</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/TRICYP.png" alt="TRICYP" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">TRICYP</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/TRIOCAST-CREAM.png" alt="TRIOCAST-CREAM" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">TRIOCAST-CREAM</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/TRIOCAST.png" alt="TRIOCAST" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">TRIOCAST</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/TRYCUF.png" alt="TRYCUF" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">TRYCUF</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/UDIGROW.png" alt="UDIGROW" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">UDIGROW</h4>
+      </div>
+      <div class="product-card" style="background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);padding:16px;width:180px;text-align:center;">
+        <img src="Products/bgr/triocef-oc.png" alt="triocef-oc" style="width:100%;height:120px;object-fit:contain;margin-bottom:10px;">
+        <h4 style="font-size:1.1em;font-weight:600;">triocef-oc</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Trayas Healthcare Product Gallery End -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+  
+    <!-- Main Footer Section Start -->
+    <footer class="main-footer2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Main Footer Box Start -->
+                    <div class="main-footer-box">
+                        <!-- Footer About Start -->
+                        <div class="footer-about">
+                            <!-- Footer Logo Start -->
+                            <div class="footer-logo">
+                                <img src="Logo/logo.png" alt="Trayas Healthcare Logo - Healthcare Company" loading="lazy">
+                            </div>
+                            <!-- Footer Logo End -->
+
+                            <!-- About Footer Content Start -->
+                            <div class="about-footer-content">
+                                <p>Trayas Healthcare - Wellness Through Innovation</p>
+                            </div>
+                            <!-- About Footer Content End -->
+
+                            <!-- Footer Content Link Start -->
+                            <div class="footer-contact-list">
+                                <ul>
+                                    <li><a href="https://wa.me/918878255663?text=May%20I%20get%20more%20info%20about%20Trayas%20Healthcare%3F" target="_blank" onclick="trackWhatsAppClick()"><i class="fa-brands fa-whatsapp" style="color:#25D366;"></i>8878255663</a></li>
+                                    <li><a href="mailto:trayashealthcare8@gmail.com"><i class="fa-solid fa-envelope"></i>trayashealthcare8@gmail.com</a></li>
+                                </ul>
+                            </div>
+                            <!-- Footer Content Link End -->
+
+                            <!-- Footer Menu Start -->
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="index.html">home</a></li>
+                                    <li><a href="about.html">about us</a></li>
+                                    <li><a href="programs.html">Products</a></li>
+                                    <li><a href="contact.html">contact</a></li>
+                                </ul>
+                            </div>
+                            <!-- Footer Menu End -->
+                        </div>
+                        <!-- Footer About End -->
+
+                        <!-- Footer Links Box Start -->
+                        <div class="footer-links-box">
+                            <!-- Footer Links Start -->
+                            <div class="footer-links">
+                                <h3>Top Products</h3>
+                                <ul>
+                                    <li><a href="#">REBANK-DSR</a></li>
+                                    <li><a href="#">TRICYP</a></li>
+                                    <li><a href="#">TRIOCAST-CREAM</a></li>
+                                    <li><a href="#">triocef-oc</a></li>
+                                    <li><a href="#">CLINDA</a></li>
+                                </ul>
+                            </div>
+                            <!-- Footer Links End -->
+
+                            <!-- Footer Links Start -->
+                            <div class="footer-links">
+                                <h3>Working Hours</h3>
+                                <ul>
+                                    <li>Mon - Fri : 9:00am - 18:00pm</li>
+                                    <li>Saturday : 9:00am - 16:00pm </li>
+                                    <li>Sunday : Closed</li>
+                                </ul>
+                            </div>
+                            <!-- Footer Links End -->
+
+                            <!-- Footer Social Links Start -->
+                            <div class="footer-social-links">
+                                <span>Follow on: </span>
+                                <ul>
+                                    <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Footer Social Links End -->
+                        </div>
+                        <!-- Footer Links Box End -->
+                    </div>
+                    <!-- Main Footer Box End -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Copyright Start -->
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-5">
+                        <!-- Footer Copyright Text Start -->
+                        <div class="footer-copyright-text">
+                            <p>Copyright © 2025 All Rights Reserved.</p>
+                        </div>
+                        <!-- Footer Copyright Text End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Copyright End -->
+    </footer>
+    <!-- Main Footer Section End -->
+
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Circle Progress Js File -->
+    <script src="js/circle-progress.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Parallax js -->
+    <script src="js/parallaxie.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- YTPlayer js File -->
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <!-- Wow js file -->
+    <script src="js/wow.min.js"></script>
+    <!-- Main Custom js file -->
+    <script src="js/function.js"></script>
+    <script>
+// Improved product filter and search
+$(document).ready(function() {
+    var $search = $('#productSearch');
+    var $grid = $('#productGrid');
+    var $filterBtns = $('#productFilters button');
+
+    function filterProducts() {
+        var query = $search.val().toLowerCase().trim();
+        var filter = $filterBtns.filter('.active').data('filter');
+        var $cards = $grid.find('.product-card');
+        var visibleCount = 0;
+        $cards.each(function() {
+            var $card = $(this);
+            var title = $card.find('h4').text().toLowerCase();
+            var typeMatch = (filter === 'all') || $card.hasClass(filter);
+            var searchMatch = !query || title.includes(query);
+            if (typeMatch && searchMatch) {
+                $card.show();
+                visibleCount++;
+            } else {
+                $card.hide();
+            }
+        });
+        // Show no results message
+        if (visibleCount === 0) {
+            if ($('#no-results-msg').length === 0) {
+                $grid.append('<div id="no-results-msg" class="col-12 text-center" style="padding:40px;color:#666;font-size:18px;background:white;border-radius:15px;box-shadow:0 4px 12px rgba(0,0,0,0.1);margin:20px 0;"><i class="fa-solid fa-search" style="font-size:48px;color:#ddd;display:block;margin-bottom:16px;"></i><strong>No products found</strong><br><small>Try adjusting your search terms or filters</small></div>');
+            }
+        } else {
+            $('#no-results-msg').remove();
+        }
+    }
+
+    $search.on('input', filterProducts);
+    $filterBtns.on('click', function() {
+        $filterBtns.removeClass('active btn-primary').addClass('btn-outline-primary');
+        $(this).addClass('active btn-primary').removeClass('btn-outline-primary');
+        filterProducts();
+    });
+    filterProducts();
+});
+</script>
+</body>
+</html>
